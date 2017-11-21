@@ -1,0 +1,4 @@
+:!UTF-8
+
+\test
+{? console('t1') = 1 & console('t2') = 1 || console('TRUE') || console('FALSE') ?}

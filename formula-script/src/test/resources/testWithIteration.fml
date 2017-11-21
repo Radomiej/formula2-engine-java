@@ -1,0 +1,50 @@
+:!UTF-8
+
+
+\test
+_p:=100;
+_work := 0;
+{! _i := 1 .. _p |! 
+	_work := _work + 1
+!}
+
+
+
+\test2
+_p:=100;
+_work := 0;
+{! _i := 1 .. _p |! 
+	_p := _p - 1;
+	_work := _work + 1
+!}
+
+\test3
+_p:=100;
+_work := 1;
+_i := 0;
+{! _i := 1 .. _p |? _work = 1 |! 
+	{? _i = 50 || _work := 0 ?}
+!};
+_i
+
+\test4
+_p:=1;
+_count:=0;
+{! _i := _p .. 10 |! 
+	_count := _count + 1
+!}
+
+\test5
+_p:=100;
+_work := 0;
+{! _i := 1 .. _p |? _work = 1 |! 
+	{? _i = 50 || _work := 0 ?};
+	_work := _work + 1
+!}
+
+\test6
+_p:=100;
+_work := 0;
+{! 1 .. _p |! 
+	_work := _work + 1
+!}

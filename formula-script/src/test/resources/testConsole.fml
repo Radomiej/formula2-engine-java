@@ -1,0 +1,6 @@
+:!UTF-8
+
+\test
+p:='Moc 23';
+_i := 0;
+console('msg: ' + p)

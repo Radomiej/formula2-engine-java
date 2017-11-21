@@ -1,0 +1,16 @@
+:!UTF-8
+
+\testBug1
+_functionScope:='Moc';
+{? 1 || 
+	console('To jest test ' + $_functionScope + ' powinien być z spacjami między wyrazami')
+?}
+
+
+\testBug2
+_entitiesCount := 10;
+{? _entitiesCount % 10 = 0 || 1 ?};
+
+\testBug3
+_entitiesCount := 0;
+{? ~_entitiesCount || 1?};

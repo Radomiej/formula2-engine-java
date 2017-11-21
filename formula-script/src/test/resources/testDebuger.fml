@@ -1,0 +1,10 @@
+:!UTF-8
+
+\test
+p:='Moc'; 
+_i := 0; 
+{? _i = 1 || console('OK') ?}
+
+\test2
+p:='Moc'; 
+_i := 0

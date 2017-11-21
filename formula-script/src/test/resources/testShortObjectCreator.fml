@@ -1,0 +1,20 @@
+:!UTF-8
+
+\test1
+p:={name: 'Testowy Obiekt', version: 1};
+a:=['test', 1, {version: 1}]
+
+\test2
+console({name: 'Testowy Obiekt', version: 1}) 
+
+\test3
+obj := {name: '!@#$%^&*()_+/[]{}<>?\|'};
+return(obj.name);
+
+\test4
+obj := {extensions:['*.png','*.jpg', '*.jpng']};
+return(obj.extensions);
+
+\test5
+obj := {id:'filesTable', columns:[{name:'Name',ref:'name'},{name:'Surname',ref:'surname'},{name:'Email',ref:'email'}]}
+return(obj.columns);

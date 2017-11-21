@@ -1,0 +1,10 @@
+:!UTF-8
+
+\test
+p:='Moc2';
+{? p = 'Moc' || test:='OK' || 
+	{? p = 'Moc2' 
+		|| test:='OK2' 
+		|| test:='FALSE' 
+	?} 
+?}

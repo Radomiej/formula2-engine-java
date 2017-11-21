@@ -1,0 +1,15 @@
+:!UTF-8
+
+\test
+_functionScope:='Moc';
+{? 1 || 
+	_macroScope := 'MacroScope';
+?};
+_macroScope
+
+
+\test2
+_functionScope:='Moc';
+{? 1 || 
+	_functionScope
+?};
