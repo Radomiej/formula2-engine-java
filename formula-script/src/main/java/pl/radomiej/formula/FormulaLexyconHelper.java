@@ -11,10 +11,10 @@ import org.apache.commons.lang3.math.NumberUtils;
 import pl.radomiej.formula.parser.IterationMacroParser;
 import pl.radomiej.formula.parser.LogicMacroParser;
 
-//TODO Doda� UnitTesty
+//TODO Dodaďż˝ UnitTesty
 public class FormulaLexyconHelper {
 	/**
-	 * Sprawdza czy jest to funkcja natywna lub wywo�anie funkcji anonimowej z
+	 * Sprawdza czy jest to funkcja natywna lub wywoďż˝anie funkcji anonimowej z
 	 * zmiennej
 	 * 
 	 * @param query
@@ -35,8 +35,8 @@ public class FormulaLexyconHelper {
 	}
 
 	/**
-	 * Sprawdza czy jest to proste wywo�anie funkcji anonimowej bezpo�rednio z
-	 * cudzys�owia.
+	 * Sprawdza czy jest to proste wywoďż˝anie funkcji anonimowej bezpoďż˝rednio z
+	 * cudzysďż˝owia.
 	 * 
 	 * @param query
 	 * @return
@@ -151,10 +151,10 @@ public class FormulaLexyconHelper {
 			if (k == -1)
 				break;
 
-			// Je�li invalid true - dany k nienale�y do szukanego contextu.
+			// Jeďż˝li invalid true - dany k nienaleďż˝y do szukanego contextu.
 			boolean invalid = false;
 
-			// Sprawdza czy k znajduje si� poza nawiasem
+			// Sprawdza czy k znajduje siďż˝ poza nawiasem
 			for (int i = 0; i < brecketsRange.size(); i += 2) {
 				int sIndex = brecketsRange.get(i) + 1;
 				int eIndex = brecketsRange.get(i + 1) - 1;
@@ -165,7 +165,7 @@ public class FormulaLexyconHelper {
 				}
 			}
 
-			// Sprawdza czy k znajduje si� poza nawiasami kwadratowymi
+			// Sprawdza czy k znajduje siďż˝ poza nawiasami kwadratowymi
 			for (int i = 0; i < squareBrecketsRange.size(); i += 2) {
 				int sIndex = squareBrecketsRange.get(i) + 1;
 				int eIndex = squareBrecketsRange.get(i + 1) - 1;
@@ -176,7 +176,7 @@ public class FormulaLexyconHelper {
 				}
 			}
 
-			// Sprawdza czy k znajduje si� poza apostrofami
+			// Sprawdza czy k znajduje siďż˝ poza apostrofami
 			for (int i = 0; i < apostrofRange.size(); i += 2) {
 				int sIndex = apostrofRange.get(i) + 1;
 				int eIndex = apostrofRange.get(i + 1) - 1;
@@ -187,7 +187,7 @@ public class FormulaLexyconHelper {
 				}
 			}
 
-			// Sprawdza czy k znajduje si� poza cudzys�owiami
+			// Sprawdza czy k znajduje siďż˝ poza cudzysďż˝owiami
 			for (int i = 0; i < quotationRange.size(); i += 2) {
 				int sIndex = quotationRange.get(i) + 1;
 				int eIndex = quotationRange.get(i + 1) - 1;
@@ -218,10 +218,10 @@ public class FormulaLexyconHelper {
 			if (k == -1)
 				break;
 
-			// Je�li invalid true - dany k nienale�y do szukanego contextu.
+			// Jeďż˝li invalid true - dany k nienaleďż˝y do szukanego contextu.
 			boolean invalid = false;
 
-			// Sprawdza czy k znajduje si� poza nawiasem
+			// Sprawdza czy k znajduje siďż˝ poza nawiasem
 			for (int i = 0; i < brecketsRange.size(); i += 2) {
 				int sIndex = brecketsRange.get(i) + 1;
 				int eIndex = brecketsRange.get(i + 1) - 1;
@@ -232,7 +232,7 @@ public class FormulaLexyconHelper {
 				}
 			}
 
-			// Sprawdza czy k znajduje si� poza nawiasem
+			// Sprawdza czy k znajduje siďż˝ poza nawiasem
 			for (int i = 0; i < squareBrecketsRange.size(); i += 2) {
 				int sIndex = squareBrecketsRange.get(i) + 1;
 				int eIndex = squareBrecketsRange.get(i + 1) - 1;
@@ -243,7 +243,7 @@ public class FormulaLexyconHelper {
 				}
 			}
 
-			// Sprawdza czy k znajduje si� poza apostrofami
+			// Sprawdza czy k znajduje siďż˝ poza apostrofami
 			for (int i = 0; i < apostrofRange.size(); i += 2) {
 				int sIndex = apostrofRange.get(i) + 1;
 				int eIndex = apostrofRange.get(i + 1) - 1;
@@ -254,7 +254,7 @@ public class FormulaLexyconHelper {
 				}
 			}
 
-			// Sprawdza czy k znajduje si� poza cudzys�owiami
+			// Sprawdza czy k znajduje siďż˝ poza cudzysďż˝owiami
 			for (int i = 0; i < quotationRange.size(); i += 2) {
 				int sIndex = quotationRange.get(i) + 1;
 				int eIndex = quotationRange.get(i + 1) - 1;
@@ -291,7 +291,7 @@ public class FormulaLexyconHelper {
 		}
 
 		if (nested > 0) {
-			throw new RuntimeException("Za dużo nawiasów kwadratowych w wyrażeniu: " + query);
+			throw new RuntimeException("Za duĹĽo nawiasĂłw kwadratowych w wyraĹĽeniu: " + query);
 		}
 		return brecketsRange;
 	}
@@ -314,7 +314,7 @@ public class FormulaLexyconHelper {
 		}
 
 		if (nested > 0) {
-			throw new FormulaRuntimeException("Za dużo nawiasów w wyrażeniu: " + query);
+			throw new FormulaRuntimeException("Za dużo nawiasĂłw w wyraĹĽeniu: " + query);
 		}
 		return brecketsRange;
 	}
@@ -337,12 +337,12 @@ public class FormulaLexyconHelper {
 		}
 
 		if (nested > 0) {
-			throw new RuntimeException("Za dużo nawiasów w wyrażeniu: " + query);
+			throw new RuntimeException("Za duĹĽo nawiasĂłw w wyraĹĽeniu: " + query);
 		}
 		return brecketsRange;
 	}
 
-	// TODO dodać wsparcie dla natywnych apostrofów wpisywanych w tekst formuli
+	// TODO dodaÄ‡ wsparcie dla natywnych apostrofĂłw wpisywanych w tekst formuli
 	private static List<Integer> getApostrofRange(String query) {
 		List<Integer> apostrofsRange = new LinkedList<Integer>();
 		for (int i = 0; i < query.length(); i++) {
@@ -353,7 +353,7 @@ public class FormulaLexyconHelper {
 		}
 
 		if (apostrofsRange.size() % 2 == 1) {
-			throw new RuntimeException("Błędna liczba apostrofów w wyrazeniu: " + query);
+			throw new RuntimeException("BĹ‚Ä™dna liczba apostrofĂłw w wyrazeniu: " + query);
 		}
 		return apostrofsRange;
 	}
@@ -368,12 +368,12 @@ public class FormulaLexyconHelper {
 		}
 
 		if (apostrofsRange.size() % 2 == 1) {
-			throw new RuntimeException("Błędna liczba cudzysłowiów w wyrażeniu: " + query);
+			throw new RuntimeException("BĹ‚Ä™dna liczba cudzysĹ‚owiĂłw w wyraĹĽeniu: " + query);
 		}
 		return apostrofsRange;
 	}
 
-	// TODO dzielenie z uwzględnieniem kontekstu
+	// TODO dzielenie z uwzglÄ™dnieniem kontekstu
 	public static String[] split(String query, String splitter) {
 		StringBuilder buffor = new StringBuilder(query);
 		List<Integer> splitIndexes = findAllSpecialWithBrecketIgnoring(splitter, buffor);
@@ -406,10 +406,10 @@ public class FormulaLexyconHelper {
 			if (k == -1)
 				break;
 
-			// Je�li invalid true - dany k nienale�y do szukanego contextu.
+			// Jeďż˝li invalid true - dany k nienaleďż˝y do szukanego contextu.
 			boolean invalid = false;
 
-			// Sprawdza czy k znajduje się poza nawiasem okrągłym
+			// Sprawdza czy k znajduje siÄ™ poza nawiasem okrÄ…gĹ‚ym
 			for (int i = 0; i < brecketsRange.size(); i += 2) {
 				int sIndex = brecketsRange.get(i) + 1;
 				int eIndex = brecketsRange.get(i + 1) - 1;
@@ -420,7 +420,7 @@ public class FormulaLexyconHelper {
 				}
 			}
 
-			// Sprawdza czy k znajduje się poza nawiasem kwadratowym
+			// Sprawdza czy k znajduje siÄ™ poza nawiasem kwadratowym
 			for (int i = 0; i < squareBrecketsRange.size(); i += 2) {
 				int sIndex = squareBrecketsRange.get(i) + 1;
 				int eIndex = squareBrecketsRange.get(i + 1) - 1;
@@ -431,7 +431,7 @@ public class FormulaLexyconHelper {
 				}
 			}
 
-			// Sprawdza czy k znajduje się poza nawiasem klamrowym
+			// Sprawdza czy k znajduje siÄ™ poza nawiasem klamrowym
 			for (int i = 0; i < buckleBrecketsRange.size(); i += 2) {
 				int sIndex = buckleBrecketsRange.get(i) + 1;
 				int eIndex = buckleBrecketsRange.get(i + 1) - 1;
@@ -442,7 +442,7 @@ public class FormulaLexyconHelper {
 				}
 			}
 
-			// Sprawdza czy k znajduje się poza apostrofami
+			// Sprawdza czy k znajduje siÄ™ poza apostrofami
 			for (int i = 0; i < apostrofRange.size(); i += 2) {
 				int sIndex = apostrofRange.get(i) + 1;
 				int eIndex = apostrofRange.get(i + 1) - 1;
@@ -453,7 +453,7 @@ public class FormulaLexyconHelper {
 				}
 			}
 
-			// Sprawdza czy k znajduje się poza cudzysłowiami
+			// Sprawdza czy k znajduje siÄ™ poza cudzysĹ‚owiami
 			for (int i = 0; i < quotationRange.size(); i += 2) {
 				int sIndex = quotationRange.get(i) + 1;
 				int eIndex = quotationRange.get(i + 1) - 1;
@@ -474,7 +474,7 @@ public class FormulaLexyconHelper {
 	}
 
 	/**
-	 * Pobiera instrukcję z Macro np. Logic/Iteration i zwraca listę instrukcji
+	 * Pobiera instrukcjÄ™ z Macro np. Logic/Iteration i zwraca listÄ™ instrukcji
 	 * do wykonania
 	 * 
 	 * @param rawLinesCondition
