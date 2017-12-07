@@ -201,12 +201,14 @@ public class FormulaVariable {
 		return null;
 	}
 
+	@JsonIgnore
 	public FormulaArray getValueLikeArray() {
 		if (value instanceof FormulaArray)
 			return (FormulaArray) value;
 		return null;
 	}
 
+	@JsonIgnore
 	public boolean getValueLikeBoolean() {
 		if (value == null)
 			return false;
@@ -218,6 +220,7 @@ public class FormulaVariable {
 		return false;
 	}
 
+	@JsonIgnore
 	public FormulaDatetime getValueLikeDateTime() {
 		if(getType() == FormulaVariableType.DATE_TIME){
 			FormulaDatetime datetime = (FormulaDatetime) value;

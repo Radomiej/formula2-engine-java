@@ -16,7 +16,7 @@ import pl.radomiej.formula.macro.LogicMacro;
 public class FormulaParser {
 
 	private FormulaEngine engine;
-	private int i = 1;
+	private int i = 0;
 	private String fileName;
 
 	public FormulaParser(String rawScript, FormulaEngine engine, String fileName) {
@@ -24,6 +24,8 @@ public class FormulaParser {
 		this.fileName = fileName;
 		
 		String[] rawLines = rawScript.split(System.lineSeparator());
+		if(rawLines[0].startsWith(":!UTF-8")) i++; //Pomija pierwsz¹ liniê jeœli jest tam zaznaczone kodowanie | STANADARD z FORMULA 1
+		
 		for (; i < rawLines.length; i++) {
 			if (FormulaLexyconHelper.isEmptyLine(rawLines[i])) {
 				continue;

@@ -314,7 +314,7 @@ public class FormulaLexyconHelper {
 		}
 
 		if (nested > 0) {
-			throw new RuntimeException("Za dużo nawiasów w wyrażeniu: " + query);
+			throw new FormulaRuntimeException("Za dużo nawiasów w wyrażeniu: " + query);
 		}
 		return brecketsRange;
 	}
